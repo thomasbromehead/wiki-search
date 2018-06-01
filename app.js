@@ -15,7 +15,7 @@ function ajaxCall() {
            var output = '';
            data.query.search.forEach(function(data) {
                var title = '<h2>' + data.title + '</h2>' + '<br>';
-               var snippet = '<p>' + data.snippet + '</P>';
+               var snippet = '<p>' + data.snippet + '</p>';
                var url = '<a href="https://en.wikipedia.org/wiki/' + data.title + '" target="_blank">';
                var endUrl = '</a>';
                output += url + title + endUrl + snippet + '<hr>';
