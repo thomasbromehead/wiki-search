@@ -17,6 +17,7 @@ function ajaxCall() {
                var title = '<h2>' + data.title + '</h2>' + '<br>';
                var snippet = '<p>' + data.snippet + '</p>';
                var url = '<a href="https://en.wikipedia.org/wiki/' + data.title + '" target="_blank">';
+               //saves manipulating too many apostrophes
                var endUrl = '</a>';
                output += url + title + endUrl + snippet + '<hr>';
            });
